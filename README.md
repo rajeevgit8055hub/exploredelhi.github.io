@@ -220,10 +220,19 @@ Your feedback is valuable to make this guide more engaging and comprehensive.
 
 ## <span id="visual-preview">🖼️ Visual Preview</span> 
 
-Visual representation of Delhi’s key attractions, monuments, and cultural hotspots.  
-Provides an overview of the city’s architecture, markets, food, and modern infrastructure.
+**💻⚙️ Website Creation — Behind the Build**
 
-![Delhi Travel Guide Preview](Delhi%20Travel%20Guide.jpg)  
+*Step-by-step design, code-in-action, layout adjustments, and live structure setup.*
+*Visual representation of Delhi’s key attractions, monuments, and cultural hotspots.*
+
+![Delhi Travel Guide Preview](Delhi%20Travel%20Guide.jpg) 
+
+**🌐 Website — Ready to Launch**
+
+*Fully designed interface with smooth interactions and final live preview.*
+*Provides an overview of the city’s architecture, markets, food, and modern infrastructure.*
+
+![Final Website – Live Preview](HTML%20CSS.gif)
 ![Delhi Travel Guide Overview](Delhi%20Travel%20Guide1.jpg)  
 
 ---
