@@ -6,6 +6,29 @@
 <title>Delhi Travel & Heritage Guide</title>
 <style>
 
+/* Top Right Transparent Date-Time */
+.rt-date-time {
+  position: absolute;
+  top: 95px;
+  right: 20px;
+  text-align: right;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: black;
+  z-index: 10;
+  background: transparent;
+}
+
+.rt-date-time #current-date {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.rt-date-time #current-time {
+  font-size: 16px;
+  margin-top: 2px;
+  font-weight: 300;
+}
+
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
   font-family:'Poppins',sans-serif;
@@ -122,6 +145,40 @@ section{animation:fadeIn 1.2s ease;}
   <h1>Delhi Travel & Heritage Guide</h1>
   <p>Culture, Heritage, Food, Temples, and Modern Vibes of India's Heart</p>
 </header>
+
+<!-- Date-Time-Status display -->
+<div class="rt-date-time">
+  <div id="current-date"></div>
+  <div id="current-time"></div>
+</div>
+
+<script>
+  function updateDateTime() {
+    const now = new Date();
+
+    const dateOptions = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    };
+
+    const dateString = now.toLocaleDateString("en-US", dateOptions);
+
+    const timeString = now.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true
+    });
+
+    document.getElementById("current-date").innerText = dateString;
+    document.getElementById("current-time").innerText = timeString;
+  }
+
+  setInterval(updateDateTime, 1000);
+  updateDateTime();
+</script>
 
 <nav>
   <a href="#home" class="active">Home</a>
@@ -487,13 +544,30 @@ amaze visitors. Even a local can discover something new every single day here �
 </div>
 </section>
 
+<!-- LinkedIn Official Profile Badge Code (Centered) -->
+<h3 style="color: black; text-align: center; font-size: 25px; font-weight: 600; margin: 0 0 15px;">
+  Contact Me
+</h3>
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+ <div class="badge-base LI-profile-badge" 
+  data-locale="en_US" data-size="medium" 
+  data-theme="dark" data-type="HORIZONTAL" 
+  data-vanity="rajeevtiwari8055" data-version="v1">
+  <a class="badge-base__link LI-simple-link" 
+  href="https://in.linkedin.com/in/rajeevtiwari8055?trk=profile-badge"></a>
+ </div> 
+</div>
+
 <!-- Copyright -->
 <footer>
   <p style="color:black">
   <span style="font-size: 25px; font-weight: 300; vertical-align: middle;">©</span> 
   <script>document.write(new Date().getFullYear());</script> Delhi Travel Guide. All rights reserved. | This website is made with 
   <i class="icon-heart color-danger" aria-hidden="true" style="color: red;"></i> ❤️ by
-  <a href="https://colorlib.com" target="_blank" style="background: linear-gradient(90deg, purple, blue, magenta);
+  <a href="https://colorlib.com" target="_blank" style="background: linear-gradient(90deg, purple, blue);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; font-weight: 600;">OpenAI</a>
   </p>
 </footer>
