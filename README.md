@@ -2,7 +2,7 @@
 
 ---
 
-🌐 [Delhi Travel Guide](https://rajeevgit8055hub.github.io/exploredelhi.github.io/)
+🌐 [Delhi Travel Guide](https://rajeevtiwari8055.github.io/exploredelhi.github.io/)
 
 ## 📑 Table of Contents  
 
